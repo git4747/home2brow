@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body 
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins', sans-serif;
+	background: #0c192c;
+}
+
+/* judul */
+.google
+{
+	position: absolute;
+	top: 20px;
+	left: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	color: var(--clr);
+	text-shadow: 0 0 20px var(--clr);
+}
+.sosmed
+{
+	position: absolute;
+	top: 180px;
+	left: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	color: var(--clr);
+	text-shadow: 0 0 20px var(--clr);
+}
+.olshop
+{
+	position: absolute;
+	top: 340px;
+	left: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	color: var(--clr);
+	text-shadow: 0 0 20px var(--clr);
+}
+
+.lain
+{
+	position: absolute;
+	top: 500px;
+	left: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	color: var(--clr);
+	text-shadow: 0 0 20px var(--clr);
+}
+
+div.button
+{
+	position: absolute;
+	top: 80px;
+	left: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 40px
+}
+div.button2
+{
+	position: absolute;
+	top: 240px;
+	left: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 40px
+}
+div.button3
+{
+	position: absolute;
+	top: 400px;
+	left: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 40px
+}
+div.button4
+{
+	position: absolute;
+	top: 560px;
+	left: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 40px
+}
+a {
+	position: relative;
+	background: #444;
+	color: #fff;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+	font-weight: 400;
+	padding: 10px 30px;
+	transition: 0.5s;
+}
+
+a:hover {
+	background: var(--clr);
+	color: var(--clr);
+	letter-spacing: 0.25em;
+	box-shadow: 0 0 35px var(--clr);
+}
+
+a:before {
+	content: '';
+	position: absolute;
+	inset: 2px;
+	background: #27282c;
+}
+
+span {
+	position: relative;
+	z-index: 1;
+}
+
+a i {
+	position: absolute;
+	inset: 0;
+	display: block;
+}
+
+a i::before {
+	content: '';
+	position: absolute;
+	top: -3.5px;
+	left: 80%;
+	width: 10px;
+	height: 5px;
+	background: #27282c;
+	transform: translateX(-50%);
+	border: 2px solid var(--clr);
+	transition: 0.5s;
+}
+
+a:hover i::before {
+	width: 20px;
+	left: 20%;
+}
+
+i::after {
+	content: '';
+	position: absolute;
+	bottom: -3.5px;
+	left: 20%;
+	width: 10px;
+	height: 5px;
+	background: #27282c;
+	transform: translateX(-50%);
+	border: 2px solid var(--clr);
+	transition: 0.5s;
+}
+
+a:hover i::after {
+	width: 20px;
+	left: 80%;
+}
+
+/* jam dinding */
+div.jam 
+{
+	position: absolute;
+	top: 80px;
+	right: 90px;
+}
+.container 
+{
+	border-radius: 50px;
+	border-top-left-radius: 225px;
+	border-top-right-radius: 225px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.clock 
+{
+	position: relative;
+	width: 450px;
+	border-radius: 50%;
+	height: 450px;
+	box-shadow: 10px 50px 70px rgba(0,0,0,0.25),
+	inset 5px 5px 10px rgba(0,0,0,0.5),
+	inset 5px 5px 20px rgba(255,255,255,0.2),
+	inset -5px -5px 15px rgba(0,0,0,0.75);
+	
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.clock::before 
+{
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background: #2f363e;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	z-index: 1000;
+}
+.clock span 
+{
+	position: absolute;
+	inset: 20px;
+	text-align: center;
+	color: #fff;
+	transform: rotate(calc(30deg * var(--i)));
+}
+.clock span b 
+{
+	font-size: 2em;
+	opacity: 0.25;
+	font-weight: 600;
+	display: inline-block;
+	transform: rotate(calc(-30deg * var(--i)));
+}
+.circle 
+{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	border: 2px solid rgba(0,0,0,0.25);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	z-index: 10;
+}
+.circle i 
+{
+	position: absolute;
+	width: 6px;
+	background: #fff;
+	height: 50%;
+	background: var(--clr);
+	opacity: 0.75;
+	transform-origin: bottom;
+	transform: scaleY(0.5);
+}
+.circle:nth-child(1) i
+{
+	width: 2px;
+}
+.circle:nth-child(2) i
+{
+	width: 4px;
+}
+.circle2 
+{
+	width: 240px;
+	height: 240px;
+	z-index: 9;
+}
+.circle3
+{
+	width: 180px;
+	height: 180px;
+	z-index: 8;
+}
+.circle::before 
+{
+	content: '';
+	position: absolute;
+	top: -8.5px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 15px;
+	height: 15px;
+	background: var(--clr);
+	border-radius: 50%;
+	box-shadow: 0 0 20px var(--clr),
+	0 0 60px var(--clr);
+}
+
+/* Digital  */
+#time 
+{
+	margin-bottom: 40px;
+	display: flex;
+	padding: 10px 20px;
+	font-size: 2em;
+	font-weight: 600;
+	border-radius: 40px;
+	border: 2px solid rgba(0,0,0,0.5);
+	box-shadow: inset 5px 5px 10px rgba(0,0,0,0.5),
+	inset 5px 5px 20px rgba(255,255,255,0.2),
+	inset -5px -5px 15px rgba(0,0,0,0.75);
+}
+#time div 
+{
+	position: relative;
+	width: 60px;
+	text-align: center;
+	color: var(--clr);
+	opacity: 0.75;
+}
+#time div:last-child 
+{
+	font-size: 0.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+}
+#time div:nth-child(1):after, 
+#time div:nth-child(2):after 
+{
+	content: ':';
+	position: absolute;
+	right: -4px;
+}
+#time div:nth-child(2):after 
+{
+	animation: animate 1s steps(1) infinite;
+}
+@keyframes animate 
+{
+	0% 
+	{
+		opacity: 1;
+	}
+	50% 
+	{
+		opacity: 0;
+	}
+}
+
+/* background balon*/
+.balon
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+.bubbles 
+{
+	position: relative;
+	display: flex;
+}
+.bubbles span 
+{
+	position: relative;
+	min-width: 30px;
+	height: 30px;
+	background: #4fc3dc;
+	box-shadow: 0 0 0 10px #4fc3dc44,
+	0 0 50px #4fc3dc,
+	0 0 100px #4fc3dc;
+	margin: 0 4px;
+	border-radius: 50%;
+	animation: animate 15s linear infinite;
+	animation-duration: calc(75s / var(--i));
+}
+.bubbles span:nth-child(even) 
+{
+	background: #ff2d75;
+	box-shadow: 0 0 0 10px #ff2d7544,
+	0 0 50px #ff2d75,
+	0 0 100px #ff2d75;
+}
+@keyframes animate 
+{
+	0% 
+	{
+		transform: translateY(100vh) scale(0);
+	}
+	100% 
+	{
+		transform: translateY(-10vh) scale(1);
+	}
+}
